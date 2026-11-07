@@ -1,0 +1,354 @@
+ /* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+  width: 100%;
+  height: 100%;
+}
+
+.link{
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.menu{
+  position: fixed;
+  top: 15px;
+  left: 20px;
+  font-size: 48px;
+  background: none;
+  border: none;
+  margin: 0px;
+  color: whitesmoke;
+  cursor:pointer;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+#menu-content {
+  /*display: none;*/
+  position: absolute;
+  background: none;
+  color: whitesmoke;
+  transition: 0.3s;
+  width:0px;
+  left: 0px;
+  margin: none;
+  font-size: 0px;
+  font-family:'Brush Script MT (cursive)', Georgia, 'Times New Roman', Times, serif;
+  top: 55px;
+}
+
+
+.menu-row {
+    text-align: left;
+    padding: none;
+    border: none;
+    margin: 4%;
+    color: whitesmoke;
+    background: none;
+    transition: 0.3s;
+    text-decoration: none;
+    /*font-size: 50%;*/
+}
+
+
+
+
+
+.title{
+  position: absolute;
+  top: 0%;
+  left: 0px;
+  font-size: 350%;
+  background: none;
+  border-left: 1%;
+  margin-left: 10%;
+  border-right: 1%;
+  margin-right: 10%;
+  border-top: 0%;
+  margin-top: 5%;
+  color: whitesmoke;
+  align-items: center;
+  width: 80%;
+}
+
+
+
+
+
+
+
+.schedule-container{
+position: absolute;
+align-content: center;
+width: 65%;
+padding-top: 10%;
+padding-left: 20%;
+padding-right: 15%;
+padding-bottom: 5%;
+background: url(background.png);
+background-size: cover;
+background-repeat:no-repeat;
+}
+
+.schedule-day{
+  font-size: 200%;
+  color: whitesmoke;
+  background:none;
+  padding: 0%;
+  border: none;
+  margin-bottom: 0%;
+  margin-top: 10%;
+  width: 100%;
+  text-align-last: left;
+}
+
+
+.schedule-block{
+  width: 100%;
+  background: none;
+  margin-top: 3%;
+  height: 60px;
+}
+
+.schedule-left{
+  background: none;
+  float: left;
+  width: 26.5%;
+  float: top;
+  margin-top: 0%;
+  height: 100%;
+}
+
+.schedule-right{
+  background: none;
+  float: right;
+  width: 73%;
+  margin-top: 0%;
+  top: 0%;
+  height: 100%;
+}
+
+.schedule-time{
+  position: relative;
+  top: 0%;
+  font-size: 110%;
+  color: black;
+  background: #a3bce8;
+  padding: 0%;
+  border: 1%;
+  border-radius: 10px;
+  margin: 0%;
+  margin-bottom: 1%;
+  width: 100%;
+  top: 0%;
+  height: 48%;
+  float: top;
+  align-content: center;
+}
+
+.schedule-place{
+  position: relative;
+  bottom: 0%;
+  font-size: 110%;
+  color: black;
+  background: #6f96db;
+  padding: 0%;
+  border: 1%;
+  border-radius: 10px;
+  margin: 0%;
+  width: 100%;
+  height: 48%;
+  float: bottom;
+  align-content: center;
+}
+
+
+.schedule-activity{
+  font-size: 18px;
+  color: black;
+  background: #D8E3F5;
+  padding: 0%;
+  border: 1%;
+  border-radius: 10px;
+  margin: 0%;
+  width: 100%;
+  padding-top: 0%;
+  padding-bottom: 0%;
+  height: 100%;
+  align-content: center;
+}
+
+
+
+
+
+.teachers-content{
+  position: absolute;
+  width: 100%;
+  padding-left: 0%;
+  padding-right: 0%;
+  padding-bottom: 10%;
+  background: url(background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.teachers-text{
+  position: absolute;
+  font-size: 150%;
+  padding-left: 20%;
+  padding-right: 35%;
+  padding-top: 12%;
+  padding-bottom: 5%;
+  width: 45%;
+  color: whitesmoke;
+  text-align:justify;
+  background: none;
+  background: url(background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+
+.video-stack {
+  position: relative;
+  margin-top: 14%;  
+  width: 19%;
+  left: 67%;
+  float: left;
+}
+
+.video-stack video {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: none;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.video-stack video.active {
+  opacity: 1;
+}
+
+/* Second viedo is right above the first one */
+.video-stack video:last-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+
+.main-content{
+  position: relative;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  align-content: center;
+}
+
+
+
+.main-text{
+  position: absolute;
+  top: 0%;
+  font-size: 150%;
+  padding-left: 20%;
+  padding-right: 20%;
+  border-color: whitesmoke;
+  padding-top: 5%;
+  width: 60%;
+  align-items: center;
+  color: whitesmoke;
+  text-align:left;
+  background: url(background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+
+
+
+
+#menu-content.show {
+  display:block;
+}
+
+.menu:hover{
+  color:rgb(245,245,245,0.85);
+}
+
+.menu:hover > #menu-content{
+  font-size: 18px;
+  width: 300px;
+}
+
+#menu-content:hover > #menu-content{
+  font-size: 18px;
+  width: 300px;
+}
+
+.menu-row:hover{
+  color:rgb(245,245,245,0.8);
+  font-size: 120%;
+}
+
+
+
+
+
+
+
+
+/*Phone/tablet specific layout (WORK IN PROGRESS)*/
+
+
+@media screen and (max-width: 800px) {
+  
+  .main-text{
+
+    font-size: 1px;
+
+  }
+
+}
+
+@media only screen and (max-width: 480px){
+
+  #menu-content {
+  /*display: none;    /* Changed so that the menu only pops up when clicking on the icon, rather than when hovering over it*/
+  position: absolute;
+  background: none;
+  color: whitesmoke;
+  transition: 0.3s;
+  width:250px;      /* Changed so that the menu only pops up when clicking on the icon, rather than when hovering over it*/
+  left: 10%;
+  margin: none;
+  font-size: 40%;   /* Changed so that the menu only pops up when clicking on the icon, rather than when hovering over it*/
+}
+
+.menu{
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  font-size: 2500%;
+  background: none;
+  border: none;
+  margin: none;
+  color: whitesmoke;
+  cursor:pointer;
+  transition: 0.3s;
+}
+
+}
+
+
+
+
