@@ -45,7 +45,7 @@
     text-align: left;
     padding: none;
     border: none;
-    margin: 4%;
+    margin: 3%;
     color: whitesmoke;
     background: none;
     transition: 0.3s;
@@ -134,7 +134,7 @@ background-repeat:no-repeat;
 .schedule-time{
   position: relative;
   top: 0%;
-  font-size: 110%;
+  font-size: 90%;
   color: black;
   background: #a3bce8;
   padding: 0%;
@@ -152,7 +152,7 @@ background-repeat:no-repeat;
 .schedule-place{
   position: relative;
   bottom: 0%;
-  font-size: 110%;
+  font-size: 90%;
   color: black;
   background: #6f96db;
   padding: 0%;
@@ -298,6 +298,24 @@ background-repeat:no-repeat;
 .menu-row:hover{
   color:rgb(245,245,245,0.8);
   font-size: 120%;
+  /*background-color: rgb(128,128,128,1);
+  border-radius: 5px;*/
+}
+
+
+
+
+
+/*Language flags*/
+
+.flags{
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  margin: 0px;
+  width: 6%;
 }
 
 
